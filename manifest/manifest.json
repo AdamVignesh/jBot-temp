@@ -1,0 +1,44 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.16",
+    "version": "1.0.0",
+    "id": "962e2f75-cb6f-4dd3-ae19-dc3d008a813b",
+    "developer": {
+        "name": "Presidio",
+        "websiteUrl": "https://www.presidio.com/",
+        "privacyUrl": "https://www.presidio.com/privacy",
+        "termsOfUseUrl": "https://www.presidio.com/app-tos"
+    },
+    "name": {
+        "short": "Janet Bot",
+        "full": "Janet bot for teams"
+    },
+    "description": {
+        "short": "Short description of this app",
+        "full": "Full description of this app"
+    },
+    "icons": {
+        "outline": "bot.png",
+        "color": "salvador.jpeg"
+    },
+    "accentColor": "#FFFFFF",
+
+    "bots": [
+        {
+            "botId": "962e2f75-cb6f-4dd3-ae19-dc3d008a813b",
+            "scopes": [
+                "team",
+                "personal"
+            ],
+            "needsChannelSelector": false,
+            "isNotificationOnly": false,
+            "supportsFiles": false,
+            "supportsCalling": false,
+            "supportsVideo": false
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ]
+}
