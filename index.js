@@ -49,9 +49,9 @@ app.get('/api',async(req,res)=>{
      res.send('the app is running');
 });
 app.post('/api/messages', async (req, res) => {
-    const activity = req.body;
-    res.send('working');
-    res.send(req.body);
-    console.log(typeof activity.type);
+    // const activity = req.body;
+    // res.send('working');
+    // res.send(req.body);
+    // console.log(typeof activity.type);
     await adapter.process(req, res, (context) => bot.run(context));
 });
