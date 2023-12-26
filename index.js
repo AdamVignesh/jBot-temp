@@ -45,7 +45,9 @@ app.listen(port || process.env.PORT || 3979, function() {
 
     console.log('\nTo talk to your bot, open the emulator select "Open Bot"');
 });
-
+app.get('/api',async(req,res)=>{
+     res.send('the app is running');
+});
 app.post('/api/messages', async (req, res) => {
     await adapter.process(req, res, (context) => bot.run(context));
 });
